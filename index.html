@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Loose It</title>
+  <meta name="description"
+    content="A weight loss app to help you figure out how much weight you need to loose to get your goal weight.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <header>
+        <h2>Weight Loss Planner</h2>
+      </header>
+      <form>
+        <p>Weight loss Calculator <a href="#" id="mode_switch" onclick="changeUnit(1)">Switch to Imperial</a></p>
+        <div>
+          <label for="gender">Gender:</label>
+          <select id="gender">
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+          </select>
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <input type="number" name="age" placeholder="30">
+        </div>
+        <div>
+          <label for="height">Height</label>
+          <input type="number" name="feet" placeholder="5">
+          <label for="ft" id="feet">ft</label>
+          <input type="number" name="inch" placeholder="8">
+          <label for="in" id="inch">in</label>
+        </div>
+        <div>
+          <label for="weight">Weight</label>
+          <input type="number" name="weight" placeholder="150">
+          <label for="lbs" id="lbs">lbs</label>
+        </div>
+        <div>
+          <label for="timeframe">Weight you wish to loose</label>
+          <input type="number" name="weight2loose" placeholder="10">
+          <label for="timeframe" id="lbs2">lbs</label>
+          <br>
+              <select id="timeframe">
+              <option value="1 week">1 Week</option>
+              <option value="2 week">2 Week</option>
+              <option value="3 week">3 Week</option>
+              <option value="1 Month">1 Month</option>
+              <option value="2 Month">2 Month</option>
+              <option value="3 Month">3 Month</option>
+              <option value="4 Month">4 Month</option>
+              <option value="5 Month">5 Month</option>
+              <option value="6 Month">6 Month</option>
+              <option value="7 Month">7 Month</option>
+              <option value="8 Month">8 Month</option>
+              <option value="9 Month">9 Month</option>
+              <option value="10 Month">10 Month</option>
+              <option value="11 Month">11 Month</option>
+              <option value="1 Year">1 Year</option>
+             </select>
+        </div>
+        <div>
+          <input type="submit" value="Calculate" onclick="Calculate()">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" async defer></script>
+</body>
+
+</html>
